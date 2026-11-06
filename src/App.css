@@ -35,6 +35,13 @@
   background: #f3f4f6;
 }
 
+.menu a.activo {
+  background: #e8f0fe;
+  color: #2563eb;
+  font-weight: 600;
+  border-left: 3px solid #2563eb;
+}
+
 .principal {
   display: flex;
   flex-direction: column;
@@ -64,6 +71,87 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+.tabla-contenedor {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.tabla th,
+.tabla td {
+  padding: 11px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tabla th {
+  background: #f9fafb;
+  color: #6b7280;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 440px;
+  margin-top: 18px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.campo input {
+  padding: 9px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+button {
+  padding: 9px 14px;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.secundario {
+  background: #fff;
+  color: #2563eb;
+}
+
+.acciones {
+  display: flex;
+  gap: 8px;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+.exito {
+  color: #047857;
+}
+
+.agotado {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
 @media (max-width: 700px) {
   .sidebar {
     width: 180px;
@@ -72,10 +160,4 @@
   .contenido {
     padding: 12px;
   }
-}
-.menu a.activo {
-  background: #e8f0fe;
-  color: #2563eb;
-  font-weight: 600;
-  border-left: 3px solid #2563eb;
 }
